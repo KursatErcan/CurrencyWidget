@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Widget.Sekerbank.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.Sekerbank.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AppWidgetSection" parent="@android:style/Widget">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:background">&#64;android:color/white</item>
+    </style>
+
+    <style name="AppWidgetLabel" parent="AppWidgetText1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppWidgetText1" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">&#64;android:color/black</item>
+    </style>
+
+    <style name="AppWidgetButton1" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <!--yeni tasarım -->
+
+    <style name="AppWidgetContainer" parent="@android:style/Widget">
+        <item name="android:background">@drawable/bg_widget</item>
+
+    </style>
+
+    <style name="AppWidgetTopBar" parent="@android:style/Widget">
+        <item name="android:background">@drawable/bg_widget_top_bar</item>
+    </style>
+
+    <style name="AppWidgetText">
+        <item name="android:textColor">@color/widget_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">20sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:gravity">right|top</item>
+    </style>
+
+    <style name="AppWidgetTitleText" parent="AppWidgetText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">@color/widget_title_text</item>
+    </style>
+
+    <style name="AppWidgetCurrencyText" parent="AppWidgetText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="AppWidgetButtonTitle" parent="AppWidgetText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppWidgetUpdateText" parent="AppWidgetText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_light_italic</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/widget_title_text</item>
+    </style>
+
+    <style name="AppWidgetButtonCard" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+
+    </style>
+
+    <style name="AppWidgetButtonCard.InnerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/AppWidgetContainer"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        style="@style/AppWidgetTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_sekerbank_widget" />
+
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/ic_refresh_widget" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/para_birimi"
+                style="@style/AppWidgetTitleText"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/alis"
+                style="@style/AppWidgetTitleText"
+                android:layout_marginTop="8dp"
+                android:gravity="right|top"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/satis"
+                style="@style/AppWidgetTitleText"
+                android:layout_marginTop="8dp"
+                android:gravity="right|top"
+                android:layout_weight="0.75"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="16dp"
+            android:paddingStart="19dp"
+            android:paddingEnd="16dp"
+            >
+            <LinearLayout
+                android:id="@+id/usdSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/flag_usd"
+                    android:layout_marginEnd="18dp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    style="@style/AppWidgetCurrencyText"
+                    android:text="@string/usd"
+                    android:translationY="-0.45sp"
+                    />
+                <TextView
+                    android:id="@+id/usdAlis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppWidgetText"
+                    android:text="₺14,7684"
+                    android:layout_weight="1"
+                    android:translationY="-1.65sp"
+                    />
+                <TextView
+                    android:id="@+id/usdSatis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppWidgetText"
+                    android:text="₺14,5664"
+                    android:layout_weight="1"
+                    android:translationY="-1.65sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eurSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/flag_eur"
+                    android:layout_marginEnd="18dp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    style="@style/AppWidgetCurrencyText"
+                    android:text="@string/eur"
+                    android:translationY="-0.45sp"
+                    />
+                <TextView
+                    android:id="@+id/eurAlis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppWidgetText"
+                    android:text="₺16,7684"
+                    android:layout_weight="1"
+                    android:translationY="-1.65sp"
+                    />
+                <TextView
+                    android:id="@+id/eurSatis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppWidgetText"
+                    android:text="₺16,5664"
+                    android:layout_weight="1"
+                    android:translationY="-1.65sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gbpSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/flag_altin"
+                    android:layout_marginEnd="18dp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    style="@style/AppWidgetCurrencyText"
+                    android:text="@string/altin"
+                    android:translationY="-0.45sp"
+                    />
+                <TextView
+                    android:id="@+id/altinAlis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppWidgetText"
+                    android:text="₺19,2768"
+                    android:layout_weight="1"
+                    android:translationY="-1.65sp"
+                    />
+                <TextView
+                    android:id="@+id/altinSatis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AppWidgetText"
+                    android:text="₺19,0123"
+                    android:layout_weight="1"
+                    android:translationY="-1.65sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+                <ImageButton
+                    style="@style/AppWidgetButtonCard"
+                    android:background="@drawable/ic_hesaplarim"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="18dp"
+                    />
+
+                <TextView
+                    android:text="Hesaplarım"
+                    style="@style/AppWidgetButtonTitle"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageButton
+                    style="@style/AppWidgetButtonCard"
+                    android:background="@drawable/ic_kartlarim"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="18dp"
+                    />
+
+                <TextView
+                    android:text="Kartlarım"
+                    style="@style/AppWidgetButtonTitle"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageButton
+                    style="@style/AppWidgetButtonCard"
+                    android:background="@drawable/ic_transferler"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="18dp"
+                    />
+
+                <TextView
+                    android:text="Transferler"
+                    style="@style/AppWidgetButtonTitle"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageButton
+                    style="@style/AppWidgetButtonCard"
+                    android:background="@drawable/ic_odemeler"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    />
+
+                <TextView
+                    android:text="Ödemeler"
+                    style="@style/AppWidgetButtonTitle"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                style="@style/AppWidgetUpdateText"
+                android:text="Son Güncelleme : "
+                />
+            <TextView
+                android:id="@+id/lastUpdate"
+                style="@style/AppWidgetUpdateText"
+                android:text="04.04.2022 15:37"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
