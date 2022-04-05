@@ -5,6 +5,11 @@
       <map>
         <entry key="..\:/Users/kursat.ercan/Desktop/CurrencyWidget/app/src/main/res/drawable-v24/bg_widget_top_bar.xml" value="0.2575" />
         <entry key="..\:/Users/kursat.ercan/Desktop/CurrencyWidget/app/src/main/res/layout/currency_widget.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kursat.ercan/Desktop/widget/CurrencyWidget/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.189" />
+        <entry key="..\:/Users/kursat.ercan/Desktop/widget/CurrencyWidget/app/src/main/res/drawable-v21/app_widget_inner_view_background.xml" value="0.189" />
+        <entry key="..\:/Users/kursat.ercan/Desktop/widget/CurrencyWidget/app/src/main/res/drawable-v24/bg_widget.xml" value="0.189" />
+        <entry key="..\:/Users/kursat.ercan/Desktop/widget/CurrencyWidget/app/src/main/res/drawable-v24/bg_widget_top_bar.xml" value="0.189" />
+        <entry key="..\:/Users/kursat.ercan/Desktop/widget/CurrencyWidget/app/src/main/res/layout/currency_widget.xml" value="0.4" />
       </map>
     </option>
   </component>

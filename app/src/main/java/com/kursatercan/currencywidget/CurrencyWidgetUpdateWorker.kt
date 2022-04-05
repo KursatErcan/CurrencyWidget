@@ -2,6 +2,7 @@ package com.kursatercan.currencywidget
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
+import android.util.Log
 import androidx.work.*
 import java.util.concurrent.TimeUnit
 
@@ -48,7 +49,7 @@ class CurrencyWidgetUpdateWorker(
             */
 
             // Periodic kullanacaksak 15 dakikadan az olmuyor */
-            val request = PeriodicWorkRequestBuilder<CurrencyWidgetUpdateWorker>(15L, TimeUnit.MILLISECONDS)
+            val request = PeriodicWorkRequestBuilder<CurrencyWidgetUpdateWorker>(15L, TimeUnit.MINUTES)
                 .setInputData(data)
                 .build()
 
@@ -74,6 +75,10 @@ class CurrencyWidgetUpdateWorker(
 
         private fun uniqueWorkName(widgetId: Int): String {
             return "widget_update_$widgetId"
+        }
+
+        fun cancelWorkManager(context: Context){
+            WorkManager.getInstance(context).cancelAllWork()
         }
     }
 }
